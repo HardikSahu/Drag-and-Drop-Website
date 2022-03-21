@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drag AND Drop</title>
+    <style>
+      body {
+        background: darkslateblue;
+      }
+      .imgBox {
+        background-image: url("https://codewithharry.com/img/logo-blue.png");
+        position: relative;
+        top: 7px;
+        left: 5px;
+        height: 145px;
+        width: 145px;
+        cursor: pointer;
+      }
+      .whiteBox {
+        display: inline-block;
+        height: 155px;
+        width: 155px;
+        margin: 10px;
+        background-color: white;
+        border: 3px solid black;
+      }
+      .hold {
+        border: 4px solid red;
+      }
+      .dashed {
+        background: violet;
+        border-style: dashed;
+      }
+      .hide {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="whiteBox">
+      <div class="imgBox" draggable="true"></div>
+    </div>
+    <div class="whiteBox"></div>
+    <div class="whiteBox"></div>
+    <div class="whiteBox"></div>
+  </body>
+  <script src="practice2.js"></script>
+</html>
